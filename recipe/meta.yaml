@@ -1,7 +1,7 @@
 {% set name = "ginga" %}
-{% set version = "2.6.0" %}
+{% set version = "2.6.4" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "ae4661cc2438cafcd66281172776e6968255482d122a154030bc815c19e0afd4" %}
+{% set hash_value = "25d3435af454135c3539108ab41d4a55169e939739e0a947f12643dce16aa16e" %}
 
 package:
   name: '{{ name|lower }}'
@@ -15,7 +15,7 @@ source:
 build:
   number: 0
   entry_points:
-    - ginga = ginga.main:_main
+    - ginga = ginga.rv.main:_main
     - ggrc = ginga.misc.grc:_main
   script: python setup.py install --offline --single-version-externally-managed --record=record.txt
 
@@ -47,18 +47,18 @@ test:
     - ginga.gtk3w.plugins
     - ginga.gtkw
     - ginga.gtkw.plugins
-    - ginga.gtkw.tests
     - ginga.gw
     - ginga.icons
     - ginga.misc
-    - ginga.misc.tests
     - ginga.mockw
     - ginga.mplw
     - ginga.opencl
+    - ginga.opengl
     - ginga.pilw
     - ginga.qtw
     - ginga.qtw.plugins
-    - ginga.qtw.tests
+    - ginga.rv
+    - ginga.rv.plugins
     - ginga.table
     - ginga.tkw
     - ginga.util
@@ -73,7 +73,6 @@ about:
   home: http://ejeschke.github.com/ginga
   license: BSD 3-clause
   license_family: BSD
-  license_file: licenses/LICENSE.txt
   summary: An astronomical image viewer and toolkit
   description: |
     Ginga is a toolkit designed for building viewers for scientific image
