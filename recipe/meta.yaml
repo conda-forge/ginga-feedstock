@@ -1,7 +1,7 @@
 {% set name = "ginga" %}
-{% set version = "2.6.4" %}
+{% set version = "2.6.5" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "25d3435af454135c3539108ab41d4a55169e939739e0a947f12643dce16aa16e" %}
+{% set hash_value = "0a8000a2e872d10fd05368cf3fa9d48d67c9191877998d764cd681f3f88b0e25" %}
 
 package:
   name: '{{ name|lower }}'
@@ -23,14 +23,14 @@ requirements:
   build:
     - python
     - setuptools
-    - astropy >=0.3
-    - numpy >=1.7
+    - astropy >=1.0
+    - numpy >=1.9
     - qtpy >=1.1
     - setuptools >=1.0
   run:
     - python
-    - astropy >=0.3
-    - numpy >=1.7
+    - astropy >=1.0
+    - numpy >=1.9
     - qtpy >=1.1
 
 test:
