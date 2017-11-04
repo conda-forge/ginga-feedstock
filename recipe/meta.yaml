@@ -1,7 +1,7 @@
 {% set name = "ginga" %}
-{% set version = "2.6.5" %}
+{% set version = "2.6.6" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "0a8000a2e872d10fd05368cf3fa9d48d67c9191877998d764cd681f3f88b0e25" %}
+{% set hash_value = "8239dce06ec16558b035a4caf666f015f8283238da0a0192bada5871e38d4f41" %}
 
 package:
   name: '{{ name|lower }}'
@@ -13,6 +13,7 @@ source:
   '{{ hash_type }}': '{{ hash_value }}'
 
 build:
+  noarch: python
   number: 0
   entry_points:
     - ginga = ginga.rv.main:_main
@@ -92,4 +93,5 @@ extra:
     - mwcraig
     - bsipocz
     - ejeschke
+    - pllim
     - pbvarga1
