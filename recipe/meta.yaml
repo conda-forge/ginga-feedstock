@@ -1,7 +1,7 @@
 {% set name = "ginga" %}
-{% set version = "2.6.6" %}
+{% set version = "2.7.0" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "8239dce06ec16558b035a4caf666f015f8283238da0a0192bada5871e38d4f41" %}
+{% set hash_value = "f0c7f2f958ab7dc9d23914d436545c6f7cafcd9bd2fa7f38db7243f4d7c703f9" %}
 
 package:
   name: '{{ name|lower }}'
