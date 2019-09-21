@@ -71,6 +71,7 @@ about:
   home: http://ejeschke.github.com/ginga
   license: BSD 3-clause
   license_family: BSD
+  license_file: LICENSE.rst
   summary: An astronomical image viewer and toolkit
   description: |
     Ginga is a toolkit designed for building viewers for scientific image
