@@ -1,0 +1,12 @@
+diff --git a/setup.cfg b/setup.cfg
+index 81d2154..8760c04 100644
+--- a/setup.cfg
++++ b/setup.cfg
+@@ -14,6 +14,7 @@ doctest_plus = enabled
+ 
+ [ah_bootstrap]
+ auto_use = True
++offline = True
+ 
+ [metadata]
+ package_name = ccdproc
