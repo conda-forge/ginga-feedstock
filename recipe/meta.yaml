@@ -19,20 +19,19 @@ build:
   script: python setup.py install --offline --single-version-externally-managed --record=record.txt
 
 requirements:
-  build:
-    - python
-    - setuptools
-    - astropy >=1.0
-    - numpy >=1.9
-    - qtpy >=1.1
-    - setuptools >=1.0
+  host:
+    - python >=3.5
+    - pip
+    - numpy >=1.13
   run:
-    - python
-    - astropy >=1.0
-    - numpy >=1.9
+    - python >=3.5
+    - astropy >=3
+    - numpy >=1.13
     - qtpy >=1.1
 
 test:
+  requires:
+    - pytest
   imports:
     - ginga
     - ginga.aggw
@@ -43,9 +42,6 @@ test:
     - ginga.doc
     - ginga.fonts
     - ginga.gtk3w
-    - ginga.gtk3w.plugins
-    - ginga.gtkw
-    - ginga.gtkw.plugins
     - ginga.gw
     - ginga.icons
     - ginga.misc
@@ -55,14 +51,16 @@ test:
     - ginga.opengl
     - ginga.pilw
     - ginga.qtw
-    - ginga.qtw.plugins
     - ginga.rv
     - ginga.rv.plugins
     - ginga.table
     - ginga.tkw
     - ginga.util
+    - ginga.util.io
+    - ginga.util.wcsmod
     - ginga.web
     - ginga.web.bokehw
+    - ginga.web.jupyterw
     - ginga.web.pgw
   commands:
     - ginga --help
