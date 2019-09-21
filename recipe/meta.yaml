@@ -6,7 +6,6 @@ package:
   version: '{{ version }}'
 
 source:
-  fn: '{{ name }}-{{ version }}.tar.gz'
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 'f725751285c15df9b72eb3c35f61674e79c99719fb88ae3a65f999bb9973a191'
   patches:
