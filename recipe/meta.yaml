@@ -8,8 +8,6 @@ package:
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: ca7f3fdcf7d1cc65c2e6401ffaaf0a964b549ab08f9fa95d5d4085f654a109ac
-  patches:
-    - setup.cfg.patch
 
 build:
   noarch: python
@@ -23,6 +21,7 @@ requirements:
   host:
     - python >=3.5
     - pip
+    - setuptools_scm
     - numpy >=1.13
   run:
     - python >=3.5
@@ -83,7 +82,7 @@ about:
     ''reference'' FITS viewer is provided, based on a plugin framework.
     Ginga is distributed under an open-source BSD licence. Please see the
     file LICENSE.txt in the top-level directory for details.
-  doc_url: http://ginga.readthedocs.io/
+  doc_url: https://ginga.readthedocs.io/
   dev_url: https://github.com/ejeschke/ginga
 
 extra:
