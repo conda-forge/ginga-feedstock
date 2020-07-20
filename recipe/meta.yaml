@@ -68,7 +68,7 @@ test:
 
 about:
   home: http://ejeschke.github.com/ginga
-  license: BSD 3-clause
+  license: BSD-3-Clause
   license_family: BSD
   license_file: LICENSE.rst
   summary: An astronomical image viewer and toolkit
