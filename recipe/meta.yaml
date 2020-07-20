@@ -1,13 +1,13 @@
 {% set name = "ginga" %}
-{% set version = "3.0.1" %}
+{% set version = "3.1.0" %}
 
 package:
-  name: '{{ name|lower }}'
-  version: '{{ version }}'
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4bbba1501ad924af07f7ec868a5f9855f1085a3263f28c9b5c417e7f973d6a3f
+  sha256: ca7f3fdcf7d1cc65c2e6401ffaaf0a964b549ab08f9fa95d5d4085f654a109ac
   patches:
     - setup.cfg.patch
 
@@ -17,7 +17,7 @@ build:
   entry_points:
     - ginga = ginga.rv.main:_main
     - ggrc = ginga.misc.grc:_main
-  script: "{{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv"
+  script: {{ PYTHON }} -m pip install . --no-deps --ignore-installed -vv
 
 requirements:
   host:
