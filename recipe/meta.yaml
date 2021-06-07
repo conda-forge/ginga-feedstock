@@ -27,6 +27,7 @@ requirements:
     - astropy >=3.2
     - numpy >=1.14
     - qtpy >=1.1
+    - setuptools
 
 test:
   requires:
