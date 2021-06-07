@@ -3,11 +3,15 @@ About ginga
 
 Home: http://ejeschke.github.com/ginga
 
-Package license: BSD 3-clause
+Package license: BSD-3-Clause
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ginga-feedstock/blob/master/LICENSE.txt)
 
 Summary: An astronomical image viewer and toolkit
+
+Development: https://github.com/ejeschke/ginga
+
+Documentation: https://ginga.readthedocs.io/
 
 Ginga is a toolkit designed for building viewers for scientific image
 data in Python, visualizing 2D pixel data in numpy arrays.
@@ -47,6 +51,7 @@ Installing `ginga` from the `conda-forge` channel can be achieved by adding `con
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `ginga` can be installed with:
@@ -117,9 +122,9 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
+   the [``build/number``](https://docs.conda.io/projects/conda-build/en/latest/resources/define-metadata.html#build-number-and-string)
    back to 0.
 
 Feedstock Maintainers
