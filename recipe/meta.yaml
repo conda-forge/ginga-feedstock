@@ -1,5 +1,5 @@
 {% set name = "ginga" %}
-{% set version = "3.1.0" %}
+{% set version = "3.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ca7f3fdcf7d1cc65c2e6401ffaaf0a964b549ab08f9fa95d5d4085f654a109ac
+  sha256: bc33543f9dc7b3bf060f3d91bb8eb6fe0f48d7a0b12201155169a48c7d6fe47d
 
 build:
   noarch: python
@@ -19,15 +19,15 @@ build:
 
 requirements:
   host:
-    - python >=3.5
+    - python >=3.7
     - pip
     - setuptools_scm
-    - numpy >=1.13
   run:
-    - python >=3.5
-    - astropy >=3
-    - numpy >=1.13
+    - python >=3.7
+    - astropy >=3.2
+    - numpy >=1.14
     - qtpy >=1.1
+    - setuptools
 
 test:
   requires:
@@ -70,7 +70,7 @@ about:
   home: http://ejeschke.github.com/ginga
   license: BSD-3-Clause
   license_family: BSD
-  license_file: LICENSE.rst
+  license_file: LICENSE.txt
   summary: An astronomical image viewer and toolkit
   description: |
     Ginga is a toolkit designed for building viewers for scientific image
