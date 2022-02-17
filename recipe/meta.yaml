@@ -1,5 +1,5 @@
 {% set name = "ginga" %}
-{% set version = "3.2.0" %}
+{% set version = "3.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: bc33543f9dc7b3bf060f3d91bb8eb6fe0f48d7a0b12201155169a48c7d6fe47d
+  sha256: b0b0a3b205d26693c709a3618717912459970a743148eb239ea6bd8002a66e95
 
 build:
   noarch: python
@@ -47,7 +47,6 @@ test:
     - ginga.misc
     - ginga.mockw
     - ginga.mplw
-    - ginga.opencl
     - ginga.opengl
     - ginga.pilw
     - ginga.qtw
@@ -91,4 +90,3 @@ extra:
     - bsipocz
     - ejeschke
     - pllim
-    - pbvarga1
