@@ -47,7 +47,6 @@ test:
     - ginga.misc
     - ginga.mockw
     - ginga.mplw
-    - ginga.opencl
     - ginga.opengl
     - ginga.pilw
     - ginga.qtw
@@ -91,4 +90,3 @@ extra:
     - bsipocz
     - ejeschke
     - pllim
-    - pbvarga1
