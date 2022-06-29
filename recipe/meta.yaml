@@ -1,5 +1,5 @@
 {% set name = "ginga" %}
-{% set version = "3.3.0" %}
+{% set version = "3.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b0b0a3b205d26693c709a3618717912459970a743148eb239ea6bd8002a66e95
+  sha256: b8144764bd37f08732efb406d123fedcb7b40fdebcb0056a46cb575f894b37de
 
 build:
   noarch: python
@@ -26,7 +26,8 @@ requirements:
     - python >=3.7
     - astropy >=3.2
     - numpy >=1.14
-    - qtpy >=1.1
+    - qtpy >=2.0.1
+    - pillow >=3.2.0
     - setuptools
 
 test:
