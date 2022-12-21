@@ -46,7 +46,7 @@ test:
     - ginga.gw
     - ginga.icons
     - ginga.misc
-    - ginga.mockw
+    - ginga.modes
     - ginga.mplw
     - ginga.opengl
     - ginga.pilw
