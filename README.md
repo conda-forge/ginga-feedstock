@@ -1,11 +1,11 @@
-About ginga
-===========
+About ginga-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ginga-feedstock/blob/main/LICENSE.txt)
 
 Home: http://ejeschke.github.com/ginga
 
 Package license: BSD-3-Clause
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ginga-feedstock/blob/main/LICENSE.txt)
 
 Summary: An astronomical image viewer and toolkit
 
