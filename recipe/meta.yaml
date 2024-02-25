@@ -1,5 +1,5 @@
 {% set name = "ginga" %}
-{% set version = "4.1.1" %}
+{% set version = "5.0.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6661fefe3e640b3ff8b7084b17b97f074c0d5491923670dfab0b622f5ae2c070
+  sha256: 7e58525feb1e65a9cab2cbd104acec4896bccb505f28578ad28f698db189cdcf
 
 build:
   noarch: python
@@ -19,15 +19,17 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
     - pip
     - setuptools_scm
   run:
-    - python >=3.7
-    - astropy >=3.2
-    - numpy >=1.14
+    - python >=3.8
+    - astropy >=5.0
+    - numpy >=1.21
     - qtpy >=2.0.1
-    - pillow >=6.2.1
+    - pillow >=9.2
+    - pyyaml >= 6.0
+    - tomli>=2.0.1; python_full_version < '3.11.0a7'
     - setuptools
 
 test:
@@ -39,17 +41,20 @@ test:
     - ginga.cairow
     - ginga.canvas
     - ginga.canvas.types
+    - ginga.cursors
     - ginga.cvw
     - ginga.doc
     - ginga.fonts
     - ginga.gtk3w
     - ginga.gw
     - ginga.icons
+    - ginga.locale
     - ginga.misc
     - ginga.modes
     - ginga.mplw
     - ginga.opengl
     - ginga.pilw
+    - ginga.plot
     - ginga.qtw
     - ginga.rv
     - ginga.rv.plugins
@@ -57,7 +62,9 @@ test:
     - ginga.tkw
     - ginga.util
     - ginga.util.io
+    - ginga.util.stages
     - ginga.util.wcsmod
+    - ginga.vec
     - ginga.web
     - ginga.web.bokehw
     - ginga.web.jupyterw
