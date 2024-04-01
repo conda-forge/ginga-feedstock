@@ -29,7 +29,8 @@ requirements:
     - qtpy >=2.0.1
     - pillow >=9.2
     - pyyaml >=6.0
-    - tomli >=2.0.1;python_full_version<'3.11.0a7'
+    # technically, python_version<"3.11"
+    - tomli >=2.0.1  
     - setuptools
 
 test:
