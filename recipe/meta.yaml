@@ -1,5 +1,5 @@
 {% set name = "ginga" %}
-{% set version = "5.0.0" %}
+{% set version = "5.0.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7e58525feb1e65a9cab2cbd104acec4896bccb505f28578ad28f698db189cdcf
+  sha256: aa0396fc820aa3cb03f35c3073656d95f6ad6ccb4fe2c2cb9a340275101989ff
 
 build:
   noarch: python
@@ -29,7 +29,8 @@ requirements:
     - qtpy >=2.0.1
     - pillow >=9.2
     - pyyaml >=6.0
-    - tomli >=2.0.1;python_full_version<'3.11.0a7'
+    # technically, python_version<"3.11"
+    - tomli >=2.0.1  
     - setuptools
 
 test:
