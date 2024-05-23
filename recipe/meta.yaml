@@ -1,5 +1,5 @@
 {% set name = "ginga" %}
-{% set version = "5.0.1" %}
+{% set version = "5.1.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: aa0396fc820aa3cb03f35c3073656d95f6ad6ccb4fe2c2cb9a340275101989ff
+  sha256: 8e830072fb358c0e99c9c20898f2a9203896222bd9e0f7d04f08f5543ebbdb30
 
 build:
   noarch: python
@@ -19,7 +19,7 @@ build:
 
 requirements:
   host:
-    - python >=3.8
+    - python >=3.9
     - pip
     - setuptools_scm
   run:
