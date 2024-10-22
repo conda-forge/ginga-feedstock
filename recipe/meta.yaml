@@ -1,5 +1,5 @@
 {% set name = "ginga" %}
-{% set version = "5.1.0" %}
+{% set version = "5.2.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 8e830072fb358c0e99c9c20898f2a9203896222bd9e0f7d04f08f5543ebbdb30
+  sha256: 506b5ed056c1bf7a02b97af2a92ea4f5e89afec006f51296ff71c7f12727ab3d
 
 build:
   noarch: python
@@ -30,7 +30,8 @@ requirements:
     - pillow >=9.2
     - pyyaml >=6.0
     # technically, python_version<"3.11"
-    - tomli >=2.0.1  
+    - tomli >=2.0.1
+    - puremagic >=1.28
     - setuptools
 
 test:
@@ -47,6 +48,7 @@ test:
     - ginga.doc
     - ginga.fonts
     - ginga.gtk3w
+    - ginga.gtk4w
     - ginga.gw
     - ginga.icons
     - ginga.locale
