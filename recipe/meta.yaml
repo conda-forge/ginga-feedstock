@@ -6,12 +6,12 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: 506b5ed056c1bf7a02b97af2a92ea4f5e89afec006f51296ff71c7f12727ab3d
 
 build:
   noarch: python
-  number: 0
+  number: 1
   entry_points:
     - ginga = ginga.rv.main:_main
     - ggrc = ginga.misc.grc:_main
@@ -24,7 +24,7 @@ requirements:
     - setuptools_scm
   run:
     - python >=3.8
-    - astropy >=5.0
+    - astropy-base >=5.0
     - numpy >=1.21
     - qtpy >=2.0.1
     - pillow >=9.2
