@@ -11,7 +11,7 @@ source:
 
 build:
   noarch: python
-  number: 0
+  number: 1
   entry_points:
     - ginga = ginga.rv.main:_main
     - ggrc = ginga.misc.grc:_main
@@ -24,7 +24,7 @@ requirements:
     - setuptools_scm
   run:
     - python >=3.8
-    - astropy >=5.0
+    - astropy-base >=5.0
     - numpy >=1.21
     - qtpy >=2.0.1
     - pillow >=9.2
