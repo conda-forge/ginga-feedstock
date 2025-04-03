@@ -1,5 +1,5 @@
 {% set name = "ginga" %}
-{% set version = "5.2.0" %}
+{% set version = "5.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,11 +7,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 506b5ed056c1bf7a02b97af2a92ea4f5e89afec006f51296ff71c7f12727ab3d
+  sha256: d3c8fcff7804d1017cd77963d87346094677e75feb883e1ad380deacc53e4f11
 
 build:
   noarch: python
-  number: 2
+  number: 0
   entry_points:
     - ginga = ginga.rv.main:_main
     - ggrc = ginga.misc.grc:_main
@@ -25,13 +25,11 @@ requirements:
     - setuptools_scm
   run:
     - python >={{ python_min }}
-    - astropy-base >=5.0
-    - numpy >=1.21
-    - qtpy >=2.0.1
-    - pillow >=9.2
+    - astropy-base >=6.0
+    - numpy >=1.26
+    - qtpy >=2.4.1
+    - pillow >=11.1
     - pyyaml >=6.0
-    # technically, python_version<"3.11"
-    - tomli >=2.0.1
     - puremagic >=1.28
     - setuptools
 
