@@ -163,6 +163,3 @@ Feedstock Maintainers
 * [@mwcraig](https://github.com/mwcraig/)
 * [@pllim](https://github.com/pllim/)
 
-
-<!-- dummy commit to enable rerendering -->
-
