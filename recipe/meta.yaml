@@ -1,5 +1,5 @@
 {% set name = "ginga" %}
-{% set version = "5.5.1" %}
+{% set version = "6.0.0" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,11 +8,11 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 467274c723344858962ce645b4ad3342b73901c2c15f79bd9bbc42723a8083bb
+  sha256: 4e968afe622032bc7d2eae2c8c3bffd5e0a7d225958bf7d00166be981abc2183
 
 build:
   noarch: python
-  number: 1
+  number: 0
   entry_points:
     - ginga = ginga.rv.main:_main
     - ggrc = ginga.misc.grc:_main
