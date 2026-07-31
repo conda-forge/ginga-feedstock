@@ -1,5 +1,5 @@
 {% set name = "ginga" %}
-{% set version = "7.0.0" %}
+{% set version = "7.1.0" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 4650f4334029b8062364b670e7390f741f8b27ea92394ab0b90332337f144b4c
+  sha256: 6f8425b62c7130e67843d52951d48bd0ae6a741f5631efa183c66d26268d9d78
 
 build:
   noarch: python
@@ -26,10 +26,10 @@ requirements:
     - setuptools_scm
   run:
     - python >={{ python_min }}
-    - astropy-base >=6.0
+    - astropy-base >=7.2.0
     - numpy >=1.26
     - qtpy >=2.4.1
-    - pillow >=11.1
+    - pillow >=12.3.0
     - pyyaml >=6.0
     - puremagic >=1.28
     - setuptools
@@ -57,6 +57,7 @@ test:
     - ginga.modes
     - ginga.mplw
     - ginga.opengl
+    - ginga.vulkan
     - ginga.pilw
     - ginga.plot
     - ginga.qtw
