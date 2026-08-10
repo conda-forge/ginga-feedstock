@@ -1,5 +1,5 @@
 {% set name = "ginga" %}
-{% set version = "7.1.0" %}
+{% set version = "7.2.0" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6f8425b62c7130e67843d52951d48bd0ae6a741f5631efa183c66d26268d9d78
+  sha256: e5b4075d47730b39a32eecd114b2a3811febdcb7bd8aaab47395a20fde6cdf89
 
 build:
   noarch: python
@@ -26,7 +26,7 @@ requirements:
     - setuptools_scm
   run:
     - python >={{ python_min }}
-    - astropy-base >=7.2.0
+    - astropy-base >=7.2.1
     - numpy >=1.26
     - qtpy >=2.4.1
     - pillow >=12.3.0
@@ -57,7 +57,6 @@ test:
     - ginga.modes
     - ginga.mplw
     - ginga.opengl
-    - ginga.vulkan
     - ginga.pilw
     - ginga.plot
     - ginga.qtw
@@ -70,6 +69,7 @@ test:
     - ginga.util.stages
     - ginga.util.wcsmod
     - ginga.vec
+    - ginga.vulkan
     - ginga.web
     - ginga.web.bokehw
     - ginga.web.jupyterw
