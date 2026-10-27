@@ -1,5 +1,5 @@
 {% set name = "ginga" %}
-{% set version = "7.5.0" %}
+{% set version = "7.6.0" %}
 {% set python_min = "3.11" %}
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ce0f0fade0536acbb6703d0213e82fbc190d057376ff1ea9f7cae6fcab655f75
+  sha256: 83b7faf1f87ac1e6bfd1dbfa4b310ed9d43c36aac9c092bd5c61f2af1d5cc14c
 
 build:
   noarch: python
